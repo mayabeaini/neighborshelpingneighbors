@@ -1,0 +1,46 @@
+@import '../../styles/allUtils';
+
+.search-bar{
+    margin: 10vw 0 14vw 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    &__form{
+        margin-left: 9vw;
+    }
+    &__address{
+        height: 10vw;
+        width: 57vw;
+        font-size: 13px;
+        padding-left: 2.5vw;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        @include tablet{
+            height: 7vw;
+            width: 50vw;
+            padding-top: 0.37vw;
+        }
+        @include desktop{
+            height: 4vw;
+            padding-top: 0.2vw;
+        }
+        &-button{
+            height: 11vw;
+            width: 20vw;
+            font-size: 13px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            @include tablet{
+                height: 7.9vw;
+                width: 15vw;
+                font-size: 17px;
+            }
+            @include desktop{
+                height: 4.5vw;
+                padding-bottom: 0.1vw;
+                width: 13vw;
+            }
+        }
+    }
+}

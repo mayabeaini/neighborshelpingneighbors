@@ -1,0 +1,80 @@
+@import '../../styles//allUtils';
+
+.header{
+    background-color: $blue;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    &__logo{
+        color: $white;
+        margin-left: 20px;
+        margin-top: 2px;
+        align-self: center;
+        font-size: 55px;
+        font-family: Arial, Helvetica, sans-serif;
+        @include tablet{
+            margin-left: 50px;
+        }
+        @include desktop{
+            margin-left: 70px;
+        }
+        &-link{
+            align-self: center;
+            text-decoration: none;
+        }
+    }
+    &__circle{
+        width: 100px;
+    }
+
+    &__bar{
+        display: flex;
+    }
+    &__icon{
+        width: 20px;
+        margin: 9.6px;
+        align-items: center;
+        @include tablet{
+            width: 29px;
+            margin: 10px 18px;
+        }
+    }
+    &__hide{
+        display: none;
+    }
+    &__delivery{
+        width: 25px;
+        @include tablet{
+            width: 34px;
+        }
+    }
+    &__menu{
+        display: flex;
+        // flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 60vw;
+        position: absolute;
+        top: 0px;
+        right: 30px;
+        @include tablet{
+            // flex-direction: row;
+            width: 69vw;
+            top: 17px;
+            right: 69px;
+        }
+        @include desktop{
+            left: 570px;
+        }
+        &-icon{
+            width: 32px;
+            margin: 25px 30px;
+            @include tablet{
+                margin: 25px 35px;
+            }
+            @include desktop{
+                margin: 25px 55px;
+            }
+        }
+    }
+}

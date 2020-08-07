@@ -1,0 +1,53 @@
+@import '../../styles/allUtils';
+// .test{
+//         @include desktop{
+//         display: flex;
+//         flex-wrap: wrap;
+//     }
+
+// }
+.cart-items{
+    margin: 10vw 0 0 0;
+    @include desktop{
+        margin: 5vw 0 0 0;
+    }
+    &--parter{
+        border-bottom: 1px solid $gray;
+        width: 90vw;
+        padding-bottom: 10vw;
+        @include desktop{
+            border: 1px solid $gray;
+            padding: 5vw;
+        }
+    }
+    &__container{
+        display: flex;
+        justify-content: space-around;
+        @include desktop{
+            justify-content: flex-start;
+        }
+    }
+    &__image{
+        width: 40vw;
+        @include desktop{
+            width: 20vw;
+        }
+    }
+    &--space{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 5vw;
+    }
+    &__name{
+        @include tablet{
+            font-size: 25px;
+            font-weight: bolder;
+        }
+    }
+    &__price{
+        @include tablet{
+            font-size: 18px;
+        }
+    }
+}

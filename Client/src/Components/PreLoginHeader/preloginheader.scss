@@ -1,0 +1,9 @@
+@import "../../styles/allUtils";
+
+.align{
+    padding-left: 40px;
+    padding-top: 10px;
+    @include tablet{
+        padding-top: 13px;
+    }
+}

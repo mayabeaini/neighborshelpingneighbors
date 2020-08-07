@@ -1,0 +1,63 @@
+@import '../../styles/allUtils';
+
+.order-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title{
+        margin-top: 15vw;
+        @include tablet{
+            font-size: 40px;
+        }
+        @include desktop{
+            margin-top: 12vw;
+        }
+    }
+    &__icon{
+        width: 40px;
+        background-color: $blue;
+        border-radius: 50%;
+        padding: 2vw;
+        position: absolute;
+        right: 5vw;
+        margin-top: 15vw;
+        margin-bottom: 5vw;
+        @include tablet{
+            margin-top: 10vw;
+            margin-right: 3vw;
+        }
+        @include desktop{
+            margin-right: 8vw;
+        }
+    }
+    &__address{
+        width: 80vw;
+        height: 40px;
+        margin: 20vw 0 5vw 0;
+        padding-left: 4vw;
+        border-radius: 4px;
+        @include tablet{
+            margin: 10vw 0 6vw 0;
+        }
+        @include desktop{
+            margin: 8vw 0 4vw 0;
+            width: 65vw;
+            height: 50px;
+        }
+    }
+    &__submit{
+        width: 40vw;
+        margin-right: 8vw;
+        align-self: flex-end;
+        height: 40px;
+        font-size: 18px;
+        @include tablet{
+            width: 25vw;
+            height: 49px;
+        }
+        @include desktop{
+            width: 20vw;
+            margin-right: 15vw;
+        }
+    }
+}

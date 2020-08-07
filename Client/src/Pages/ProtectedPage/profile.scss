@@ -1,0 +1,55 @@
+@import '../../styles/allUtils';
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    @include tablet{
+        height: 100vh;
+    }
+    &__title{
+        margin-bottom: 4vw;
+        font-size: 35px;
+        @include tablet{
+            margin-top: 6vw;
+            font-size: 40px;
+        }
+        @include desktop{
+            margin-top: 3vw;
+        }
+    }
+    &__name{
+        margin-bottom: 10vw;
+        font-size: 29px;
+        @include tablet{
+            font-size: 35px;
+            margin-bottom: 6vw;
+        }
+    }
+    &__orders{
+        display: flex;
+        flex-direction: column;
+        @include desktop{
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+    &__button{
+        width: 90vw;
+        height: 15vw;
+        margin-top: 5vw;
+        font-size: 16px;
+        @include tablet{
+            width: 50vw;
+            height: 8vw;
+        }
+        @include desktop{
+            width: 30vw;
+            height: 5vw;
+            margin: 3vw;
+            font-size: 18px;
+        }
+    }
+}

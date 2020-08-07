@@ -1,0 +1,76 @@
+@import '../../styles/allUtils';
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    @include tablet{
+        height: 100vh;
+    }
+    &__button{
+        height: 13vw;
+        width: 60vw;
+        display: flex;
+        align-items: center;
+        padding: 0 3vw;
+        margin: 10vw;
+        @include tablet{
+            width: 40vw;
+            height: 10vw;
+            margin: 5vw;
+        }
+        @include desktop{
+            width: 28vw;
+            height: 6vw;
+            margin: 3vw;
+        }
+        &-google{
+            justify-content: space-around;
+            border: 0.5px solid rgba(225, 225, 225, 0.7);
+            background-color: rgba(247, 247, 247, 0.6);
+            color: black;
+            font-weight: normal;
+            @include tablet{
+                font-size: 16px;
+            }
+            @include desktop{
+                font-size: 17px;
+            }
+        }
+        &-facebook{
+            justify-content: space-between;
+            background-color: #3a559f;
+            padding-right: 4vw;
+            font-size: 12.6px;
+            border-radius: 0px;
+            @include tablet{
+                font-size: 16px;
+            }
+            @include desktop{
+                font-size: 17px;
+            }
+        }
+    }
+    &__facebook{
+        height: 8vw;
+        margin-bottom: 1vw;
+        @include tablet{
+            height: 6vw;
+        }
+        @include desktop{
+            height: 3.6vw;
+            margin-left: 1vw;
+        }
+    }
+    &__google{
+        height: 6vw;
+        margin-right: 10px;
+        @include tablet{
+            height: 5vw;
+        }
+        @include desktop{
+            height: 3.2vw;
+        }
+    }
+}

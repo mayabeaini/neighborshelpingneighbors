@@ -1,0 +1,84 @@
+@import "../../styles/allUtils";
+
+.delivery{
+    margin: 5vw;
+    &__title{
+        margin-bottom: 2vw;
+        @include tablet{
+            margin-bottom: 5vw;
+            font-size: 40px;
+        }
+    }
+    &__drop{
+        font-size: 21px;
+    }
+    &__address{
+        margin: 5vw 0;
+        font-weight: bolder;
+        @include tablet{
+            margin: 2vw 0 5vw 0;
+            font-size: 18px;
+        }
+        @include desktop{
+            font-size: 21px;
+        }
+    }
+    &__items{
+        @include tablet{
+            font-size: 25px;
+        }
+    }
+    &__parts{
+        margin: 10vw 0;
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid $gray;
+        padding-bottom: 5vw;
+        @include desktop{
+            margin: 5vw 0;
+        }
+
+    }
+    &__image{
+        width: 40vw;
+        @include desktop{
+            width: 20vw;
+        }
+    }
+    &__info{
+        align-self: center;
+        margin-left: 5vw;
+        &--align{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 2vw;
+        }
+        
+    }
+    &__price, &__amount{
+        font-size: 14px;
+        margin-top: 3vw;
+        @include tablet{
+            font-size: 23px;
+        }
+
+        @include desktop{
+            font-size: 25px;
+        }
+    }
+    &__name{
+        font-size: 20px;
+        @include desktop{
+            font-size: 28px;
+            font-weight: bolder;
+        }
+    }
+    &__done{
+        width: 35vw;
+        height: 9vw;
+        font-size: 20px;
+        @include desktop{
+            font-size: 22px;
+        }
+    }
+}

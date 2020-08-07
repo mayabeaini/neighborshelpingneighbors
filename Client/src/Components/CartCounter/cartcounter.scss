@@ -1,0 +1,47 @@
+@import '../../styles/allUtils';
+
+.counter{
+    &__dot{
+        background-color: $gray-blue;
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        font-size: 9px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        position: relative;
+        top: 3.4vw;
+        left: 6.2vw;
+        align-self: flex-end;
+        @include tablet{
+            width: 15px;
+            height: 15px;
+            font-size: 10px;
+            top: 4.8vw;
+            left: 3.5vw;
+        }
+        @include desktop{
+            width: 18px;
+            height: 18px;
+            font-size: 10px;
+            top: 4.4vw;
+            left: 2.6vw;
+        }
+    }
+    &__cart{
+        width: 30px;
+        align-self: flex-end;
+        margin-right: 5vw;
+        @include tablet{
+            width: 40px;
+            margin-top: 3vw;
+        }
+        @include desktop{
+            width: 45px;
+        }
+    }
+
+}

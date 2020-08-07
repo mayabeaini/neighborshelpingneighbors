@@ -1,0 +1,48 @@
+@import '../../styles/allUtils';
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0 10vw;
+    &__welcome{
+        margin-bottom: 11vw;
+        @include tablet{
+            margin-bottom: 7vw;
+        }
+        @include desktop{
+            font-size: 45px;
+            margin-bottom: 8vw;
+        }
+    }
+    &__paragraph{
+        margin: 10px 0;
+        @include desktop{
+            font-size: 24px;
+        }
+    }
+    &__button{
+        height: 13vw;
+        width: 60vw;
+        display: flex;
+        justify-content: space-around;
+        padding: 0 3vw;
+        align-items: center;
+        text-transform: uppercase;
+        margin-top: 15vw;
+        @include tablet{
+            width: 30vw;
+            height: 8vw;
+            align-self: flex-end;
+            margin-top: 10vw;
+        }
+        @include desktop{
+            margin-top: 8vw;
+            height: 5vw;
+            font-size: 18px;
+            width: 27vw;
+        }
+    }
+}

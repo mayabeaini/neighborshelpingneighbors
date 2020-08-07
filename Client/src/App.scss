@@ -1,0 +1,32 @@
+@import './styles/allUtils';
+
+*{
+    margin: 0;
+    padding: 0;
+    color: $gray-blue;
+    font-family: "Roboto";
+}
+body{
+    background-color: $white;
+}
+h1, h2, h3, h4, h5 {
+    font-family: "Domine";
+    color: $dark-blue;
+}
+input{
+    outline: none;
+    border: 2px solid $blue;
+    border-radius: 4px;
+    background-color: white;
+    @include desktop{
+        font-size: 17px;
+    }
+}
+button{
+    background-color: $blue;
+    color: $white;
+    border: none;
+    border-radius: 4px;
+    outline:none;
+    font-weight:bolder;
+}

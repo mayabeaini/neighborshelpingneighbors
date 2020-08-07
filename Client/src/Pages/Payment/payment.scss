@@ -1,0 +1,39 @@
+@import "../../styles/allUtils";
+
+.payment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title{
+        margin: 15vw 0 10vw 0;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border: 1px solid $gray;
+        border-radius: 4px;
+        padding: 11vw 10vw;
+        width: 60vw;
+        background-color: rgb(250, 250, 250);
+    }
+    &__fullname{
+        font-size: 20px;
+        margin-bottom: 5vw;
+    }
+    &__name{
+        height: 28px;
+        padding-left: 2vw;
+        margin-bottom: 9vw;
+    }
+    &__method{
+        margin-bottom: 5vw;
+        font-size: 17px;
+    }
+    &__button{
+        margin-top: 9vw;
+        width: 90px;
+        height: 30px;
+        align-self: flex-end;
+    }
+}

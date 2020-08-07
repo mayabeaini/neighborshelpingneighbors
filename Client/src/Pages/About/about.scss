@@ -1,0 +1,41 @@
+@import '../../styles/allUtils';
+
+.about{
+    margin: 5vw;
+    &__help{
+        margin-top: 15vw;
+    }
+    &__me{
+        margin-top: 11vw;
+    }
+    &__title{
+        margin-top: 2vw;
+        font-size: 40px;
+        margin-bottom: 5vw;
+    }
+    &__reach{
+        font-size: 22px;
+        margin-bottom: 2vw;
+        &me{
+            font-size: 25px;
+            font-weight: bolder;
+            margin-top: 5vw;
+            margin-bottom: 3vw;
+        }
+    }
+    &__web{
+        font-size: 30px;
+        margin-bottom: 1vw;
+    }
+    &__name{
+        font-size: 35px;
+        margin-bottom: 1vw;
+        font-weight: bolder;
+    }
+}
+a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+}
