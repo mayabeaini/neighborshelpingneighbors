@@ -9,6 +9,8 @@ import location from '../../assets/icons/location-sharp.svg'
 import pin from '../../assets/icons/pin-sharp.svg'
 import './mappage.scss'
 
+
+
 // STYLING OF THE MAP
 const mapStyles = {
   width: '90vw',
@@ -21,7 +23,7 @@ const mapStyles = {
 const googleApi = "https://maps.googleapis.com/maps/api/geocode/json?address="
 
 // GOOGLE API KEY
-const googleApiKey = "&key=AIzaSyB73W_SePvzrGgVQmGWvDtT0pw_lM9mhXE"
+const googleApiKey = process.env.REACT_APP_GOOGLE_API_KEY
 
 export class MapPage extends Component {
   state={

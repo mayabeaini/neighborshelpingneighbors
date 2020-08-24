@@ -10,7 +10,8 @@ import './orderform.scss'
 const googleApi = "https://maps.googleapis.com/maps/api/geocode/json?address="
 
 // GOOGLE API KEY
-const googleApiKey = "&key=AIzaSyB73W_SePvzrGgVQmGWvDtT0pw_lM9mhXE"
+const googleApiKey = process.env.REACT_APP_GOOGLE_API_KEY
+
 
 export default function OrderForm() {
 

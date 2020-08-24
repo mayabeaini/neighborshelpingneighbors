@@ -16,8 +16,8 @@ const routes = require('./routes');
 require('dotenv').config();
  
 const passportConfig = {
- clientID: "314042531945-9m1cipmq29a7f4vatqm6sjhiog3mieqm.apps.googleusercontent.com",
- clientSecret: "M7jcFBizQWA4JgpxHjl1570l",
+ clientID: process.env.CLIENT_ID,
+ clientSecret: process.env.CLIENT_SECRET,
  callbackURL: "http://localhost:8080/auth/google/callback"
 };
  
